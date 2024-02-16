@@ -1,0 +1,5 @@
+streamlit
+sqlalchemy
+uvicorn
+psycopg2-binary
+
