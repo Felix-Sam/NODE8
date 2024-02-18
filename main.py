@@ -50,6 +50,7 @@ def main():
             cheilosis = st.selectbox(":red[Cheilosis]", ['yes', 'no'],key='cheilosis')
             bowlegs = st.selectbox(":red[Bowlegs]", ['yes', 'no'], key="bowlegs")
             location = st.text_input(":red[Location]", key="location")
+            type_of_malnutrition = st.text_input(":red[Type of malnutrition]", key="type_of_malnutrition")
             face_image = st.file_uploader("Face Image", key="face_image")
             if face_image:
                 st.image(face_image,width=300,caption='image of a face')
@@ -84,6 +85,7 @@ def main():
                     "cheilosis":cheilosis,
                     "bowlegs":bowlegs,
                     "location": location,
+                    'type_of_malnutrition':type_of_malnutrition,
                     "face_image": face_image.read() if face_image else None,
                     "hair_image": hair_image.read() if hair_image else None,
                     "hands_image": hands_image.read() if hands_image else None,

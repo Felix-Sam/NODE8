@@ -17,6 +17,7 @@ class Malnurish_data(Base):
     hair_type = Column(String)
     eyes_type = Column(String)
     date_created = Column(DateTime, default=datetime.now)
+    type_of_malnutrition = Column(String)
     oedema = Column(String)
     angular_stomatitis = Column(String)
     cheilosis = Column(String)
