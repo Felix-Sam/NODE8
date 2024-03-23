@@ -5,17 +5,6 @@ from datetime import datetime
 from database import *
 
 
-# page_image = """
-# <style> 
-# [data-testid="stAppViewBlockContainer"]{
-# background-image: url('https://i.pinimg.com/originals/a9/cc/74/a9cc74b75eab827e3cc483751673f770.jpg');
-# background-size: cover;
-# }
-
-# </style>
-#  """
-# st.markdown(page_image,unsafe_allow_html=True)
-
 # Create the SQLAlchemy engine and session
 SQLALCHEMY_DATABASE_URL = 'sqlite:///./malnutrition.db'
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
