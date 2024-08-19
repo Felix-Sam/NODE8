@@ -14,7 +14,7 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 # Streamlit app
 def main():
     st.title(":blue[Malnutrition Data Collection Form]")
-    classes = ['Malnourish', 'Nourished']
+    classes = ['Malnourished', 'Nourished']
     selected_class = st.sidebar.radio('Select an option', classes)
     st.image('Node8.PNG')
     st.sidebar.header('Data Collection App')
